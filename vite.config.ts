@@ -7,8 +7,8 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   base: "",  // Set base to empty string for both dev and prod
   server: {
-    host: "::",
-    port: 8080,
+    host: "0.0.0.0",
+    port: parseInt(process.env.PORT || "8080"),
     headers: {
       'X-Content-Type-Options': 'nosniff',
       'X-Frame-Options': 'DENY',
@@ -35,6 +35,7 @@ export default defineConfig(({ mode }) => ({
     target: 'esnext',
     minify: 'terser',
     cssMinify: true,
+    outDir: 'dist',
     rollupOptions: {
       output: {
         manualChunks: {
