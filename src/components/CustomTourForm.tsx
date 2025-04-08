@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, Calendar, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, Calendar, MapPin, Send, MessageSquare } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
@@ -85,7 +85,45 @@ const CustomTourForm = ({ className }: CustomTourFormProps) => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleWhatsAppSubmit = (sanitizedData: any) => {
+    const message = `*New Custom Tour Request*
+🧑‍🦱 Name: ${sanitizedData.name}
+📧 Email: ${sanitizedData.email}
+📱 Phone: ${sanitizedData.phone}
+🌍 Destination: ${sanitizedData.destination}
+📅 Start Date: ${sanitizedData.startDate}
+⏱️ Duration: ${sanitizedData.duration} days
+👥 Number of People: ${sanitizedData.numberOfPeople}
+
+Special Requirements:
+${sanitizedData.specialRequirements}`;
+
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${config.whatsappContact}&text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const handleEmailSubmit = (sanitizedData: any) => {
+    const subject = `Custom Tour Request from ${sanitizedData.name}`;
+    const body = `New Custom Tour Request Details:
+
+👤 Name: ${sanitizedData.name}
+📧 Email: ${sanitizedData.email}
+📱 Phone: ${sanitizedData.phone}
+🌍 Destination: ${sanitizedData.destination}
+📅 Start Date: ${sanitizedData.startDate}
+⏱️ Duration: ${sanitizedData.duration} days
+👥 Number of People: ${sanitizedData.numberOfPeople}
+
+Special Requirements:
+${sanitizedData.specialRequirements}
+
+Best regards,
+${sanitizedData.name}`;
+
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${config.companyEmail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
+
+  const handleSubmit = async (e: React.FormEvent, submitType: 'whatsapp' | 'email') => {
     e.preventDefault();
     
     if (!validateForm()) {
@@ -98,7 +136,7 @@ const CustomTourForm = ({ className }: CustomTourFormProps) => {
     }
 
     // Check rate limiting
-    const clientId = formData.email; // Use email as client identifier
+    const clientId = formData.email;
     if (!rateLimiter.checkLimit(clientId)) {
       toast({
         title: "Too Many Requests",
@@ -121,7 +159,7 @@ const CustomTourForm = ({ className }: CustomTourFormProps) => {
     setIsSubmitting(true);
 
     try {
-      // Sanitize inputs before creating message
+      // Sanitize inputs
       const sanitizedData = {
         name: sanitizeInput(formData.name),
         email: sanitizeInput(formData.email),
@@ -133,23 +171,15 @@ const CustomTourForm = ({ className }: CustomTourFormProps) => {
         specialRequirements: sanitizeInput(formData.specialRequirements)
       };
 
-      // Format the message for WhatsApp
-      const message = `*New Custom Tour Request*
-🧑‍🦱 Name: ${sanitizedData.name}
-📧 Email: ${sanitizedData.email}
-📱 Phone: ${sanitizedData.phone}
-🗺️ Destination: ${sanitizedData.destination}
-📅 Start Date: ${sanitizedData.startDate}
-⏱️ Duration: ${sanitizedData.duration}
-👥 Number of People: ${sanitizedData.numberOfPeople}
-📝 Special Requirements: ${sanitizedData.specialRequirements}`;
-
-      const whatsappUrl = `https://api.whatsapp.com/send?phone=${config.whatsappContact}&text=${encodeURIComponent(message)}`;
-      window.open(whatsappUrl, '_blank');
+      if (submitType === 'whatsapp') {
+        handleWhatsAppSubmit(sanitizedData);
+      } else {
+        handleEmailSubmit(sanitizedData);
+      }
       
       toast({
         title: "Success!",
-        description: "Your custom tour request has been sent. We'll get back to you soon!",
+        description: `Your request has been prepared to send via ${submitType === 'whatsapp' ? 'WhatsApp' : 'Email'}.`,
       });
       
       // Reset form and generate new CSRF token
@@ -200,7 +230,7 @@ const CustomTourForm = ({ className }: CustomTourFormProps) => {
             transition={{ duration: 0.6 }}
             className="bg-white rounded-lg shadow-lg p-8"
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form className="space-y-6">
               <input type="hidden" name="_csrf" value={csrfToken} />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -297,10 +327,27 @@ const CustomTourForm = ({ className }: CustomTourFormProps) => {
                 />
               </div>
 
-              <Button type="submit" className="w-full md:w-auto" disabled={isSubmitting}>
-                Send Request
-                <Send className="ml-2 h-4 w-4" />
-              </Button>
+              <div className="flex flex-col md:flex-row gap-4 justify-center">
+                <Button
+                  type="button"
+                  className="flex-1 md:flex-none md:min-w-[200px]"
+                  onClick={(e) => handleSubmit(e, 'whatsapp')}
+                  disabled={isSubmitting}
+                >
+                  <MessageSquare className="mr-2 h-4 w-4" />
+                  Send via WhatsApp
+                </Button>
+                <Button
+                  type="button"
+                  variant="secondary"
+                  className="flex-1 md:flex-none md:min-w-[200px]"
+                  onClick={(e) => handleSubmit(e, 'email')}
+                  disabled={isSubmitting}
+                >
+                  <Mail className="mr-2 h-4 w-4" />
+                  Send via Email
+                </Button>
+              </div>
             </form>
           </motion.div>
         </div>

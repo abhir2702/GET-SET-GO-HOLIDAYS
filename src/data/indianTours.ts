@@ -98,30 +98,6 @@ export const indianTours: Tour[] = [
   },
   {
     id: generateId(),
-    name: "Rajasthan Golden Triangle Premium Tour",
-    pricing: {
-      with_flight: "₹35,000"
-    },
-    duration: "7N/8D",
-    itinerary: [
-      "Day 1: Arrival in Delhi, hotel check-in",
-      "Day 2: Delhi sightseeing (Red Fort, Qutub Minar, etc.)",
-      "Day 3: Delhi to Agra, Taj Mahal, Agra Fort",
-      "Day 4: Agra to Fatehpur Sikri, then to Jaipur",
-      "Day 5: Jaipur: City Palace, Hawa Mahal, Amber Fort",
-      "Day 6: Jaipur to Udaipur, City Palace, Lake Pichola boat ride",
-      "Day 7: Udaipur to Jodhpur, Jaswant Thada, Mehrangarh Fort",
-      "Day 8: Jodhpur to Delhi, departure"
-    ],
-    location: "Rajasthan, India",
-    image: "https://images.unsplash.com/photo-1590687755272-62eae3441038?auto=format&fit=crop&w=800&q=80",
-    rating: 4.9,
-    reviewCount: 132,
-    featured: false,
-    category: "india"
-  },
-  {
-    id: generateId(),
     name: "Kerala Backwaters Tour",
     pricing: {
       with_flight: "₹25,000",
@@ -191,30 +167,6 @@ export const indianTours: Tour[] = [
   },
   {
     id: generateId(),
-    name: "Magnificient Kashmir - Book Now Pay Later Package",
-    pricing: {
-      with_flight: "₹30,000",
-      land_only: "₹25,000"
-    },
-    duration: "7D/6N",
-    itinerary: [
-      "Day 1: Arrival in Srinagar, hotel check-in",
-      "Day 2: Srinagar city tour, Dal Lake shikara ride",
-      "Day 3: Trip to Sonamarg, Thajiwas glacier, Vishansar Lake",
-      "Day 4: Trip to Pahalgam, Betaab Valley, Aru Valley",
-      "Day 5: Trip to Gulmarg, Gondola ride",
-      "Day 6: Back to Srinagar, local shopping",
-      "Day 7: Departure"
-    ],
-    location: "Kashmir, India",
-    image: "/src/assets/images/Kashmir Premium Package.webp",
-    rating: 4.8,
-    reviewCount: 220,
-    featured: true,
-    category: "india"
-  },
-  {
-    id: generateId(),
     name: "Scuba Diving Special Package",
     pricing: {
       with_flight: "₹89,064",
@@ -231,30 +183,9 @@ export const indianTours: Tour[] = [
       "Day 7: Departure"
     ],
     location: "Andaman, India",
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/Scuba Diving Special Package.webp",
     rating: 4.9,
     reviewCount: 180,
-    featured: false,
-    category: "india"
-  },
-  {
-    id: generateId(),
-    name: "Most Wanted Goa Package",
-    pricing: {
-      with_flight: "₹22,025"
-    },
-    duration: "5D/4N",
-    itinerary: [
-      "Day 1: Arrival in Goa, hotel check-in",
-      "Day 2: Visit to Old Goa, churches, museums",
-      "Day 3: Beach activities, water sports",
-      "Day 4: Shopping in Panjim, local cuisine",
-      "Day 5: Departure"
-    ],
-    location: "Goa, India",
-    image: "https://images.unsplash.com/photo-1577717908798-de21559896c1?auto=format&fit=crop&w=800&q=80",
-    rating: 4.5,
-    reviewCount: 155,
     featured: false,
     category: "india"
   },
@@ -274,7 +205,7 @@ export const indianTours: Tour[] = [
       "Day 5: Jaipur to Delhi, departure"
     ],
     location: "Rajasthan, India",
-    image: "https://images.unsplash.com/photo-1604149370700-e7a4b209a15a?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/Rajasthan Desert Tour.webp",
     rating: 4.7,
     reviewCount: 142,
     featured: false,
@@ -382,7 +313,7 @@ export const indianTours: Tour[] = [
       "Day 4: Departure from Vijayawada"
     ],
     location: "Andhra Pradesh, India",
-    image: "https://images.unsplash.com/photo-1623667238365-78a0315eac78?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/Andhra Pradesh Coastal Tour.webp",
     rating: 4.3,
     reviewCount: 85,
     featured: false,
@@ -402,30 +333,9 @@ export const indianTours: Tour[] = [
       "Day 3: Warangal to Hyderabad, departure"
     ],
     location: "Telangana, India",
-    image: "https://images.unsplash.com/photo-1606298855672-1a96d17b6609?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/Telangana Historical Tour.webp",
     rating: 4.4,
     reviewCount: 78,
-    featured: false,
-    category: "india"
-  },
-  {
-    id: generateId(),
-    name: "Puducherry French Quarter Tour",
-    pricing: {
-      with_flight: "₹25,000",
-      land_only: "₹15,000"
-    },
-    duration: "4D/3N",
-    itinerary: [
-      "Day 1: Arrival in Chennai, transfer to Puducherry, hotel check-in",
-      "Day 2: Explore French Quarter and Auroville",
-      "Day 3: Visit local markets and beaches",
-      "Day 4: Departure from Puducherry to Chennai"
-    ],
-    location: "Puducherry, India",
-    image: "https://images.unsplash.com/photo-1642429080576-c6094c6d0ef5?auto=format&fit=crop&w=800&q=80",
-    rating: 4.5,
-    reviewCount: 90,
     featured: false,
     category: "india"
   },
@@ -444,7 +354,7 @@ export const indianTours: Tour[] = [
       "Day 5: Departure"
     ],
     location: "Lakshadweep, India",
-    image: "https://images.unsplash.com/photo-1592287914050-465654e2c566?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/Lakshadweep Island Paradise Tour.webp",
     rating: 4.9,
     reviewCount: 105,
     featured: true,
@@ -465,7 +375,7 @@ export const indianTours: Tour[] = [
       "Day 4: Gokarna to Mangalore, departure"
     ],
     location: "Karnataka, India",
-    image: "https://images.unsplash.com/photo-1595232133541-7d780be2ead5?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/Karnataka Coastal Tour.webp",
     rating: 4.4,
     reviewCount: 82,
     featured: false,
@@ -486,7 +396,7 @@ export const indianTours: Tour[] = [
       "Day 4: Wayanad to Kochi, departure"
     ],
     location: "Kerala, India",
-    image: "https://images.unsplash.com/photo-1604164388977-1b6250cf0483?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/Kerala Hill Station Tour.webp",
     rating: 4.7,
     reviewCount: 115,
     featured: false,
@@ -507,7 +417,7 @@ export const indianTours: Tour[] = [
       "Day 4: Coonoor to Chennai, departure"
     ],
     location: "Tamil Nadu, India",
-    image: "https://images.unsplash.com/photo-1518004260913-cb8a1f7d4c44?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/Tamil Nadu Hill Station Tour.webp",
     rating: 4.5,
     reviewCount: 95,
     featured: false,
@@ -529,7 +439,7 @@ export const indianTours: Tour[] = [
       "Day 5: Nagarhole to Bangalore, departure"
     ],
     location: "Karnataka, India",
-    image: "https://images.unsplash.com/photo-1628620252435-1251ec07e5ce?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/Karnataka Jungle Safari Tour.webp",
     rating: 4.8,
     reviewCount: 102,
     featured: false,
