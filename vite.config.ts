@@ -6,6 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   base: "",  // Set base to empty string for both dev and prod
+  publicDir: 'public', // Explicitly set public directory
   server: {
     host: "0.0.0.0",
     port: parseInt(process.env.PORT || "8080"),
@@ -36,20 +37,29 @@ export default defineConfig(({ mode }) => ({
     minify: 'terser',
     cssMinify: true,
     outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true, // Clean the output directory before build
     rollupOptions: {
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
           'ui-vendor': ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-navigation-menu'],
           'utils-vendor': ['clsx', 'tailwind-merge', 'date-fns']
+        },
+        assetFileNames: (assetInfo) => {
+          const info = assetInfo.name.split('.');
+          const ext = info[info.length - 1];
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico|webp/i.test(ext)) {
+            return `assets/images/[name]-[hash][extname]`;
+          }
+          return `assets/[name]-[hash][extname]`;
         }
       }
     }
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {

@@ -164,7 +164,7 @@ const ContactUs = () => {
         {/* Hero Section */}
         <div className="relative h-[50vh] bg-cover bg-center" 
           style={{ 
-            backgroundImage: "url('/src/assets/images/Kerala Backwaters Tour.webp')",
+            backgroundImage: "url('/images/Kerala Backwaters Tour.webp')",
             backgroundAttachment: "fixed"
           }}>
           <div className="absolute inset-0 bg-black/40" />

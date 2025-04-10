@@ -6,7 +6,9 @@ import { useNavigate, Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
-import internationalTourHero from '@/assets/images/INTERNATIONAL TOUR.webp';
+
+// Update the hero image path
+const internationalTourHero = '/images/INTERNATIONAL TOUR.webp';
 
 const InternationalTours = () => {
   const navigate = useNavigate();

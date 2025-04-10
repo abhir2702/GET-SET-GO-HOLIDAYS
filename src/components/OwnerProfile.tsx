@@ -88,7 +88,7 @@ const OwnerProfile = ({ className }: OwnerProfileProps) => {
                   <div className="w-full h-full rounded-full overflow-hidden relative">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10 rounded-full"></div>
                     <img 
-                      src="/src/assets/images/Owner.webp" 
+                      src="/images/Owner.webp" 
                       alt="Gaurav Bisht - Founder & CEO"
                       className="w-full h-full object-cover"
                       loading="lazy"

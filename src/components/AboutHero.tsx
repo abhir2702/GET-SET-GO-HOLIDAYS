@@ -9,7 +9,7 @@ const AboutHero = ({ className }: AboutHeroProps) => {
     <section className={cn("relative h-[60vh] md:h-[80vh] bg-cover bg-center", className)}>
       <div 
         className="absolute inset-0 bg-cover bg-center" 
-        style={{ backgroundImage: "url('/src/assets/images/About_us hero image.webp')" }}
+        style={{ backgroundImage: "url('/images/About_us hero image.webp')" }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/30"></div>

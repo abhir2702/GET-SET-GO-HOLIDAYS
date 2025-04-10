@@ -20,7 +20,7 @@ export const indianTours: Tour[] = [
       "Day 5: Departure"
     ],
     location: "Goa, India",
-    image: "/src/assets/images/Goa Beach Escape.webp",
+    image: "/images/Goa Beach Escape.webp",
     rating: 4.7,
     reviewCount: 128,
     featured: true,
@@ -41,7 +41,7 @@ export const indianTours: Tour[] = [
       "Day 5: Departure"
     ],
     location: "Goa, India",
-    image: "/src/assets/images/Goa Cultural Tour.webp",
+    image: "/images/Goa Cultural Tour.webp",
     rating: 4.5,
     reviewCount: 92,
     featured: false,
@@ -66,7 +66,7 @@ export const indianTours: Tour[] = [
       "Day 8: Departure"
     ],
     location: "Kashmir, India",
-    image: "/src/assets/images/Kashmir Magnificent Tour.webp",
+    image: "/images/Kashmir Magnificent Tour.webp",
     rating: 4.9,
     reviewCount: 203,
     featured: true,
@@ -90,7 +90,7 @@ export const indianTours: Tour[] = [
       "Day 7: Jodhpur to Delhi, departure"
     ],
     location: "Rajasthan, India",
-    image: "/src/assets/images/Rajasthan Golden Triangle Tour.jpg",
+    image: "/images/Rajasthan Golden Triangle Tour.jpg",
     rating: 4.8,
     reviewCount: 169,
     featured: true,
@@ -115,7 +115,7 @@ export const indianTours: Tour[] = [
       "Day 8: Thekkady, wildlife tour, departure"
     ],
     location: "Kerala, India",
-    image: "/src/assets/images/Kerala Backwaters Tour.webp",
+    image: "/images/Kerala Backwaters Tour.webp",
     rating: 4.9,
     reviewCount: 215,
     featured: true,
@@ -139,7 +139,7 @@ export const indianTours: Tour[] = [
       "Day 7: Departure from Delhi"
     ],
     location: "Himachal Pradesh, India",
-    image: "/src/assets/images/Himachal Adventure Tour.webp",
+    image: "/images/Himachal Adventure Tour.webp",
     rating: 4.7,
     reviewCount: 178,
     featured: false,
@@ -159,7 +159,7 @@ export const indianTours: Tour[] = [
       "Day 4: River rafting, departure"
     ],
     location: "Himachal Pradesh, India",
-    image: "/src/assets/images/Himachal Honeymoon Package.jpg",
+    image: "/images/Himachal Honeymoon Package.jpg",
     rating: 4.6,
     reviewCount: 145,
     featured: false,
@@ -183,7 +183,7 @@ export const indianTours: Tour[] = [
       "Day 7: Departure"
     ],
     location: "Andaman, India",
-    image: "/src/assets/images/Scuba Diving Special Package.webp",
+    image: "/images/Scuba Diving Special Package.webp",
     rating: 4.9,
     reviewCount: 180,
     featured: false,
@@ -205,7 +205,7 @@ export const indianTours: Tour[] = [
       "Day 5: Jaipur to Delhi, departure"
     ],
     location: "Rajasthan, India",
-    image: "/src/assets/images/Rajasthan Desert Tour.webp",
+    image: "/images/Rajasthan Desert Tour.webp",
     rating: 4.7,
     reviewCount: 142,
     featured: false,
@@ -227,7 +227,7 @@ export const indianTours: Tour[] = [
       "Day 5: Kalimpong to Bagdogra, departure"
     ],
     location: "Sikkim, India",
-    image: "/src/assets/images/Sikkim Himalayan Adventure.webp",
+    image: "/images/Sikkim Himalayan Adventure.webp",
     rating: 4.8,
     reviewCount: 115,
     featured: false,
@@ -248,7 +248,7 @@ export const indianTours: Tour[] = [
       "Day 4: Departure"
     ],
     location: "Uttarakhand, India",
-    image: "/src/assets/images/Jim Corbett National Park Tour.webp",
+    image: "/images/Jim Corbett National Park Tour.webp",
     rating: 4.6,
     reviewCount: 98,
     featured: false,
@@ -270,7 +270,7 @@ export const indianTours: Tour[] = [
       "Day 5: Departure from Chennai"
     ],
     location: "Tamil Nadu, India",
-    image: "/src/assets/images/Tamil Nadu Cultural Tour.webp",
+    image: "/images/Tamil Nadu Cultural Tour.webp",
     rating: 4.5,
     reviewCount: 110,
     featured: false,
@@ -292,7 +292,7 @@ export const indianTours: Tour[] = [
       "Day 5: Hampi to Bangalore, departure"
     ],
     location: "Karnataka, India",
-    image: "/src/assets/images/Karnataka Heritage Tour.webp",
+    image: "/images/Karnataka Heritage Tour.webp",
     rating: 4.7,
     reviewCount: 122,
     featured: false,
@@ -313,7 +313,7 @@ export const indianTours: Tour[] = [
       "Day 4: Departure from Vijayawada"
     ],
     location: "Andhra Pradesh, India",
-    image: "/src/assets/images/Andhra Pradesh Coastal Tour.webp",
+    image: "/images/Andhra Pradesh Coastal Tour.webp",
     rating: 4.3,
     reviewCount: 85,
     featured: false,
@@ -333,7 +333,7 @@ export const indianTours: Tour[] = [
       "Day 3: Warangal to Hyderabad, departure"
     ],
     location: "Telangana, India",
-    image: "/src/assets/images/Telangana Historical Tour.webp",
+    image: "/images/Telangana Historical Tour.webp",
     rating: 4.4,
     reviewCount: 78,
     featured: false,
@@ -354,7 +354,7 @@ export const indianTours: Tour[] = [
       "Day 5: Departure"
     ],
     location: "Lakshadweep, India",
-    image: "/src/assets/images/Lakshadweep Island Paradise Tour.webp",
+    image: "/images/Lakshadweep Island Paradise Tour.webp",
     rating: 4.9,
     reviewCount: 105,
     featured: true,
@@ -375,7 +375,7 @@ export const indianTours: Tour[] = [
       "Day 4: Gokarna to Mangalore, departure"
     ],
     location: "Karnataka, India",
-    image: "/src/assets/images/Karnataka Coastal Tour.webp",
+    image: "/images/Karnataka Coastal Tour.webp",
     rating: 4.4,
     reviewCount: 82,
     featured: false,
@@ -396,7 +396,7 @@ export const indianTours: Tour[] = [
       "Day 4: Wayanad to Kochi, departure"
     ],
     location: "Kerala, India",
-    image: "/src/assets/images/Kerala Hill Station Tour.webp",
+    image: "/images/Kerala Hill Station Tour.webp",
     rating: 4.7,
     reviewCount: 115,
     featured: false,
@@ -417,7 +417,7 @@ export const indianTours: Tour[] = [
       "Day 4: Coonoor to Chennai, departure"
     ],
     location: "Tamil Nadu, India",
-    image: "/src/assets/images/Tamil Nadu Hill Station Tour.webp",
+    image: "/images/Tamil Nadu Hill Station Tour.webp",
     rating: 4.5,
     reviewCount: 95,
     featured: false,
@@ -439,7 +439,7 @@ export const indianTours: Tour[] = [
       "Day 5: Nagarhole to Bangalore, departure"
     ],
     location: "Karnataka, India",
-    image: "/src/assets/images/Karnataka Jungle Safari Tour.webp",
+    image: "/images/Karnataka Jungle Safari Tour.webp",
     rating: 4.8,
     reviewCount: 102,
     featured: false,

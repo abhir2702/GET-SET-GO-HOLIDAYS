@@ -22,7 +22,7 @@ export const internationalTours: Tour[] = [
       "Day 7: Departure"
     ],
     location: "Bali, Indonesia",
-    image: "/src/assets/images/Bali Paradise Getaway.webp",
+    image: "/images/Bali Paradise Getaway.webp",
     rating: 4.8,
     reviewCount: 302,
     featured: true,
@@ -48,7 +48,7 @@ export const internationalTours: Tour[] = [
       "Day 9: Departure from Zurich"
     ],
     location: "Switzerland",
-    image: "/src/assets/images/Swiss Alps Adventure.webp",
+    image: "/images/Swiss Alps Adventure.webp",
     rating: 4.9,
     reviewCount: 187,
     featured: true,
@@ -75,7 +75,7 @@ export const internationalTours: Tour[] = [
       "Day 10: Departure"
     ],
     location: "Japan",
-    image: "/src/assets/images/Japan Cherry Blossom Tour.webp",
+    image: "/images/Japan Cherry Blossom Tour.webp",
     rating: 4.9,
     reviewCount: 230,
     featured: true,
@@ -100,7 +100,7 @@ export const internationalTours: Tour[] = [
       "Day 8: Departure"
     ],
     location: "Greece",
-    image: "/src/assets/images/Greek Islands Cruise.webp",
+    image: "/images/Greek Islands Cruise.webp",
     rating: 4.7,
     reviewCount: 178,
     featured: true,
@@ -121,7 +121,7 @@ export const internationalTours: Tour[] = [
       "Day 5: Visit Tanah Lot Temple, departure"
     ],
     location: "Bali, Indonesia",
-    image: "/src/assets/images/Bali Bliss Tour.jpg",
+    image: "/images/Bali Bliss Tour.jpg",
     rating: 4.8,
     reviewCount: 210,
     featured: false,
@@ -143,7 +143,7 @@ export const internationalTours: Tour[] = [
       "Day 6: Visit Floating Market, departure"
     ],
     location: "Thailand",
-    image: "/src/assets/images/Thailand Explorer Tour.jpg",
+    image: "/images/Thailand Explorer Tour.jpg",
     rating: 4.7,
     reviewCount: 185,
     featured: false,
@@ -164,7 +164,7 @@ export const internationalTours: Tour[] = [
       "Day 5: Dhow Cruise on Dubai Marina, departure"
     ],
     location: "Dubai, UAE",
-    image: "/src/assets/images/Dubai Extravaganza Tour.webp",
+    image: "/images/Dubai Extravaganza Tour.webp",
     rating: 4.8,
     reviewCount: 198,
     featured: false,
@@ -186,7 +186,7 @@ export const internationalTours: Tour[] = [
       "Day 6: Astana city tour, departure"
     ],
     location: "Kazakhstan",
-    image: "/src/assets/images/Kazakhstan Adventure Tour.webp",
+    image: "/images/Kazakhstan Adventure Tour.webp",
     rating: 4.6,
     reviewCount: 89,
     featured: false,
@@ -206,7 +206,7 @@ export const internationalTours: Tour[] = [
       "Day 4: Shopping at Chatuchak Market, departure"
     ],
     location: "Bangkok, Thailand",
-    image: "/src/assets/images/Bangkok Getaway Tour.webp",
+    image: "/images/Bangkok Getaway Tour.webp",
     rating: 4.6,
     reviewCount: 150,
     featured: false,
@@ -227,7 +227,7 @@ export const internationalTours: Tour[] = [
       "Day 5: Cu Chi Tunnels tour, departure"
     ],
     location: "Vietnam",
-    image: "/src/assets/images/Vietnam Highlights Tour.webp",
+    image: "/images/Vietnam Highlights Tour.webp",
     rating: 4.7,
     reviewCount: 142,
     featured: false,
@@ -247,7 +247,7 @@ export const internationalTours: Tour[] = [
       "Day 4: Spa day, departure"
     ],
     location: "Maldives",
-    image: "/src/assets/images/Maldives Paradise Tour.webp",
+    image: "/images/Maldives Paradise Tour.webp",
     rating: 4.9,
     reviewCount: 230,
     featured: false,
@@ -269,7 +269,7 @@ export const internationalTours: Tour[] = [
       "Day 6: Local food tour, departure"
     ],
     location: "Malaysia",
-    image: "/src/assets/images/Malaysia Cultural Tour.webp",
+    image: "/images/Malaysia Cultural Tour.webp",
     rating: 4.7,
     reviewCount: 156,
     featured: false,
@@ -289,7 +289,7 @@ export const internationalTours: Tour[] = [
       "Day 4: Shopping on Orchard Road, departure"
     ],
     location: "Singapore",
-    image: "/src/assets/images/Singapore City Escape.webp",
+    image: "/images/Singapore City Escape.webp",
     rating: 4.8,
     reviewCount: 189,
     featured: false,
@@ -312,7 +312,7 @@ export const internationalTours: Tour[] = [
       "Day 7: Departure"
     ],
     location: "Australia",
-    image: "/src/assets/images/Australia Outback Tour.webp",
+    image: "/images/Australia Outback Tour.webp",
     rating: 4.8,
     reviewCount: 132,
     featured: false,
@@ -333,7 +333,7 @@ export const internationalTours: Tour[] = [
       "Day 5: Montmartre exploration, departure"
     ],
     location: "Paris, France",
-    image: "/src/assets/images/Paris Romantic Tour.webp",
+    image: "/images/Paris Romantic Tour.webp",
     rating: 4.8,
     reviewCount: 205,
     featured: false,
@@ -353,7 +353,7 @@ export const internationalTours: Tour[] = [
       "Day 4: Beach day in Nusa Dua, departure"
     ],
     location: "Bali, Indonesia",
-    image: "/src/assets/images/Bali Honeymoon Special.webp",
+    image: "/images/Bali Honeymoon Special.webp",
     rating: 4.9,
     reviewCount: 178,
     featured: false,
@@ -374,7 +374,7 @@ export const internationalTours: Tour[] = [
       "Day 5: Local market visit, departure"
     ],
     location: "Phuket, Thailand",
-    image: "/src/assets/images/Thailand Beach Adventure.webp",
+    image: "/images/Thailand Beach Adventure.webp",
     rating: 4.7,
     reviewCount: 165,
     featured: false,
@@ -394,7 +394,7 @@ export const internationalTours: Tour[] = [
       "Day 4: Shopping at Gold Souk, departure"
     ],
     location: "Dubai, UAE",
-    image: "/src/assets/images/Dubai Luxury Tour.webp",
+    image: "/images/Dubai Luxury Tour.webp",
     rating: 4.9,
     reviewCount: 142,
     featured: false,
@@ -415,7 +415,7 @@ export const internationalTours: Tour[] = [
       "Day 5: Departure"
     ],
     location: "Kazakhstan",
-    image: "/src/assets/images/Kazakhstan Cultural Tour.webp",
+    image: "/images/Kazakhstan Cultural Tour.webp",
     rating: 4.5,
     reviewCount: 78,
     featured: false,
@@ -434,7 +434,7 @@ export const internationalTours: Tour[] = [
       "Day 3: Chatuchak Weekend Market, departure"
     ],
     location: "Bangkok, Thailand",
-    image: "/src/assets/images/Bangkok Shopping Spree.webp",
+    image: "/images/Bangkok Shopping Spree.webp",
     rating: 4.6,
     reviewCount: 120,
     featured: false,
@@ -456,7 +456,7 @@ export const internationalTours: Tour[] = [
       "Day 6: Departure"
     ],
     location: "Vietnam",
-    image: "/src/assets/images/Vietnam Coastal Tour.webp",
+    image: "/images/Vietnam Coastal Tour.webp",
     rating: 4.7,
     reviewCount: 135,
     featured: false,
@@ -477,7 +477,7 @@ export const internationalTours: Tour[] = [
       "Day 5: Departure"
     ],
     location: "Maldives",
-    image: "/src/assets/images/Maldives Overwater Villa Tour.webp",
+    image: "/images/Maldives Overwater Villa Tour.webp",
     rating: 4.9,
     reviewCount: 210,
     featured: false,
@@ -499,7 +499,7 @@ export const internationalTours: Tour[] = [
       "Day 6: Departure"
     ],
     location: "Malaysia & Singapore",
-    image: "/src/assets/images/Malaysia-Singapore Combo Tour.webp",
+    image: "/images/Malaysia-Singapore Combo Tour.webp",
     rating: 4.8,
     reviewCount: 168,
     featured: false,
@@ -523,7 +523,7 @@ export const internationalTours: Tour[] = [
       "Day 8: Departure"
     ],
     location: "Australia",
-    image: "/src/assets/images/Australia Coastal Drive Tour.webp",
+    image: "/images/Australia Coastal Drive Tour.webp",
     rating: 4.8,
     reviewCount: 145,
     featured: false,
